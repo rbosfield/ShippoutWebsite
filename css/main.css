@@ -1,0 +1,286 @@
+@font-face {
+font-family: Gotham-Book;
+font-weight: bold;
+src: url("../fonts/Gotham-Book.otf") format("opentype");
+}
+
+@font-face {
+font-family: Gotham-Medium;
+font-weight: bold;
+src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+h1 {
+	font-size: 25px;
+	/*color: #71778B;*/
+	color: #79819a;
+	font-family: 'Gotham-Book';
+	line-height: 46px;
+	letter-spacing: 2.18px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Gotham-Medium';
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 2.7px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+h3 {
+	font-family: 'Gotham-Medium';
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+p {
+	font-size: 12px;
+	font-family: 'Gotham-Book';
+	line-height: 22px;
+	letter-spacing: 1px;
+	color: #9198B0;
+}
+
+/*MAIN STRUCTURES*/
+.mainstuff {
+  padding: 6em 0em 0em 0em;
+  /*border: solid blue;*/
+}
+
+.leftside {
+	/*border: solid yellow;*/
+	padding: 2em 0em 2em 0em;
+}
+
+.section {
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	float: center;
+	padding: 1em 0em 1em 0em;
+	/*border: solid 1px #595959;*/
+}
+
+.buttons {
+	float: center;
+	display: block;
+	margin: 0 auto;
+	width: 45%;
+	/*border: solid red;*/
+}
+
+.download {
+	background-color: #3FCC9D;
+	border: none;
+	padding: .75em 0em 1.25em 0em;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.download:hover {
+	background-color: #597fff;
+}
+
+a:hover {
+	text-decoration: none;
+	border: none;	
+}
+
+.download h3 {
+	line-height: 0px;
+}
+
+
+/*LINKTEXTING*/
+
+.linkTextingWidget {
+	margin-top: 15px;
+}
+
+.linkTextingInner {
+	width: 100%;
+
+}
+.linkTextingInput {
+	background-color: rgba(145, 152, 176, .2);
+	width: 63%;
+	display: inline-block;
+	float: left;
+	border: none;
+	border-radius: 5px;
+	height: 30px;
+	vertical-align: top;
+	padding: 0em 0em 0em 1em;
+	color: #595959;
+	font-family: 'Gotham-Medium';
+
+}
+
+.linkTextingButton {
+	background-color: #9198B0;
+	width: 35%;
+	display: inline-block;
+	float: right;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	vertical-align: top;
+	box-shadow: .5px .5px 2px rgba(0,0,0,.5);
+	height: 30px;
+
+	font-size: 8px;
+	font-family: 'Gotham-Medium';
+	line-height: 24px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.linkTextingButton:hover {
+	background-color: #597fff;
+}
+
+.linkTextingButton h3{
+	font-size: 8px;
+	line-height: 0px;
+	margin: 0 auto;
+	float: center;
+}
+
+
+
+
+/*SOCIAL*/
+.social {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	float: center;
+	text-align: center;
+	padding: 4em 0em 2em 0em;
+}
+
+.icons {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	float: center;
+	text-align: center;
+}
+
+.icons img {
+	float: center;
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+	/*width: 20px;*/
+
+}
+
+.icons a:hover img{
+	color: #598fff;
+	opacity: .7;
+}
+
+.hashtag h1 {
+	color: #9198B0;
+	line-height: 25px;
+	letter-spacing: 1.18px;
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+.hashtag a:hover h1{
+	color: #598fff;
+}
+
+/*logo*/
+.logo img {
+	width: 45%;
+}
+
+
+
+/*footer*/
+.text-muted {
+	display: inline-block;
+	text-align: center;
+	float: center;
+	margin: 15px;
+	color: #79819a;
+}
+
+.amy:hover {
+	color: #598fff;
+}
+
+.text-muted p {
+	letter-spacing: 1px;
+}
+
+.footer {
+	text-align: center;
+	padding: 1em 0em 1em 0em;
+}
+
+.text-muted p:hover {
+	color: #598fff;
+}
+
+/*tagline*/
+.tagline {
+	margin: 0 auto;
+	float: center;
+	display: block;
+	width: 75%;
+}
+
+/*press*/
+
+.dropithere {
+	/*border: solid red;*/
+	text-align: center;
+	padding: .5em 0em 1em 0em;
+}
+
+.press {
+	float: none;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	/*border: solid blue;*/
+	max-height: 50px;
+	padding: 0px;
+}
+
+.press img {
+	/*width: 60%;*/
+	float: center;
+	display: block;
+	margin: 0 auto;
+	/*border: solid blue;*/
+	height: 35px;
+}
+
+
+
+.asseenin {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.asseenin p {
+	color: #9198B0;
+	/*margin: 0 auto;*/
+	font-size: 12px;
+	/*text-transform: uppercase;*/
+}
+
+hr {
+	width: 40%;
+}
+
