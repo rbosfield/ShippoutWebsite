@@ -88,7 +88,7 @@ p {
 
 a:hover {
 	text-decoration: none;
-	border: none;	
+	border: none;
 }
 
 .download h3 {
@@ -108,9 +108,9 @@ a:hover {
 }
 .linkTextingInput {
 	background-color: rgba(145, 152, 176, .2);
-	width: 63%;
-	display: inline-block;
-	float: left;
+	width: 50%;
+	display: block;
+	/*float: left;*/
 	border: none;
 	border-radius: 5px;
 	height: 30px;
@@ -118,22 +118,24 @@ a:hover {
 	padding: 0em 0em 0em 1em;
 	color: #595959;
 	font-family: 'Gotham-Medium';
-
+	margin-bottom: 10px;
+	margin-left: 25%
 }
 
 .linkTextingButton {
 	background-color: #9198B0;
-	width: 35%;
-	display: inline-block;
-	float: right;
+	width: 50%;
+	display: block;
+	float: left;
 	margin: 0 auto;
+	margin-left: 25%;
 	border: none;
 	border-radius: 5px;
 	vertical-align: top;
 	box-shadow: .5px .5px 2px rgba(0,0,0,.5);
 	height: 30px;
 
-	font-size: 8px;
+	font-size: 14px;
 	font-family: 'Gotham-Medium';
 	line-height: 24px;
 	letter-spacing: 1.4px;
@@ -280,7 +282,7 @@ a:hover {
 	/*text-transform: uppercase;*/
 }
 
-hr {
+.pressstories hr {
 	width: 40%;
+	margin-bottom: 0px;
 }
-
