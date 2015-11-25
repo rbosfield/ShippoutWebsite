@@ -1,274 +1,273 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-     <meta name="description" content="ShippOUT - Friends.Shipps.Lookbacks.">
-     <meta name="keywords" content="meetup, friends, tonight, squad, social, shipping, friendshipping, social calendar, events">
-     <meta name="author" content="ShippOUT">
-     <meta property="og:title" content="ShippOUT - Social calendar and memorioes with firends." />
-    <meta property="og:type" content="website" />
-     <meta property="og:description" content="ShippOUT. Social Calendar. See what's upcoming, going on, and what happened">
-     <meta property="og:image" content="img/facebook2.png">
-    <title>ShippOUT - Friends.Shipps.Lookbacks.</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="ShippOUT - Friends.Shipps.Lookbacks.">
+  <meta name="keywords" content="meetup, friends, tonight, squad, social, shipping, friendshipping, social calendar, events">
+  <meta name="author" content="ShippOUT">
+  <meta property="og:title" content="ShippOUT - Social calendar and memorioes with firends." />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="ShippOUT. Social Calendar. See what's upcoming, going on, and what happened">
+  <meta property="og:image" content="img/facebook2.png">
+  <title>ShippOUT - Friends.Shipps.Lookbacks.</title>
 
-    <!-- Bootstrap -->
-    <script src="//cdn.optimizely.com/js/3721580735.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- <link rel="stylesheet" href="http://d3q6uu7asevdsg.cloudfront.net/1.3/css/link_texting.min.css"> -->
-<style type="text/css">
+  <!-- Bootstrap -->
+  <script src="//cdn.optimizely.com/js/3721580735.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- <link rel="stylesheet" href="http://d3q6uu7asevdsg.cloudfront.net/1.3/css/link_texting.min.css"> -->
+  <style type="text/css">
   /* Add your own LinkTexting form style overrides in your site stylesheet or in this style block.
   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
-    <link href="css/mobile.css" rel="stylesheet">
+  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
+  <link href="css/mobile.css" rel="stylesheet">
 
-    <!-- <link href="css/mobile.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+  <!-- <link href="css/mobile.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <!-- main stuff -->
-      <div class="container" >
-        <div class="row mainstuff">
+  <!-- main stuff -->
+  <div class="container" >
+    <div class="row mainstuff">
 
-        <!-- left side -->
-            <div class="col-md-7 leftside">
-                <div class="section logo">
-                    <a href="http://shippoutapp.com" target="_blank"><img src="img/logo.png"></a>
-                </div>
+      <!-- left side -->
+      <div class="col-md-7 leftside">
+        <div class="section logo">
+          <a href="http://shippoutapp.com" target="_blank"><img src="img/logo.png"></a>
+        </div>
 
-                <div class="section tagline">
-                    <h1>ShippOUT. Social Calendar. See what's upcoming, going on, and what happened. </h1>
-                </div>
+        <div class="section tagline">
+          <h1>ShippOUT. Social Calendar. See what's upcoming, going on, and what happened. </h1>
+        </div>
 
-   <!-- mailchimp script -->
-    <script>
-     $(function () {
-       function signup ($form) {
-        $.ajax({
-            type: $form.attr('method'),
-            url: $form.attr('action'),
-            data: $form.serialize(),
-            cache: false,
-            dataType: 'jsonp',
-            jsonp: 'c',
-            contentType: 'application/json; charset=utf-8',
-            error: function (error) {
+        <!-- mailchimp script -->
+        <script>
+        $(function () {
+          function signup ($form) {
+            $.ajax({
+              type: $form.attr('method'),
+              url: $form.attr('action'),
+              data: $form.serialize(),
+              cache: false,
+              dataType: 'jsonp',
+              jsonp: 'c',
+              contentType: 'application/json; charset=utf-8',
+              error: function (error) {
                 $('#mc_embed_signup').hide().after('<p class="error">Something went wrong.</p>');
                 setTimeout(function () {
-                    $('p.error').remove();
-                    $('#mc_embed_signup').show();
+                  $('p.error').remove();
+                  $('#mc_embed_signup').show();
                 }, 3000);
-            },
-            success: function(data) {
+              },
+              success: function(data) {
                 console.log('yo');
                 if (data.result != 'success') {
-                    $('#mc_embed_signup').hide().after('<p class="error">Something went wrong. Double check your email address and try again.</p>');
-                    setTimeout(function () {
-                        $('p.error').remove();
-                        $('#mc_embed_signup').show();
-                    }, 3000);
+                  $('#mc_embed_signup').hide().after('<p class="error">Something went wrong. Double check your email address and try again.</p>');
+                  setTimeout(function () {
+                    $('p.error').remove();
+                    $('#mc_embed_signup').show();
+                  }, 3000);
                 } else {
-                    $('#mc_embed_signup').replaceWith('<p class="success">Please check your inbox and follow the link to confirm your email address.</p>');
+                  $('#mc_embed_signup').replaceWith('<p class="success">Please check your inbox and follow the link to confirm your email address.</p>');
                 }
-            }
- </script>                
-<!-- Mailchimp embed -->
-    <div id="mc_embed_signup">
-        <form action="https://shippoutapp.us11.list-manage.com/subscribe/post?u=6aeda5914a56283ac5864c464&amp;id=701b87219f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-                <!-- <div class="mc-field-group"> -->
-                  <!-- <label for="mce-EMAIL">Email Address</span></label> -->
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Learn more and join our wait list">
-                <!-- </div> -->
-              <!-- <div id="mce-responses" class="clear"> -->
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              <!-- </div> -->
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;">
-                    <input type="text" name="b_7d5a147a16453f8bd059a7141_c2bde1fec6" tabindex="-1" value="">
+              }
+              </script>
+              <div class="section tagline">
+
+                <!-- Mailchimp embed -->
+                <div id="mc_embed_signup">
+                  <form action="https://shippoutapp.us11.list-manage.com/subscribe/post?u=6aeda5914a56283ac5864c464&amp;id=701b87219f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <!-- <div class="mc-field-group"> -->
+                      <!-- <label for="mce-EMAIL">Email Address</span></label> -->
+                      <input type="email" value="" name="EMAIL" class="required email linkTextingInput" id="mce-EMAIL" placeholder="Find out more ...">
+                      <!-- </div> -->
+                      <!-- <div id="mce-responses" class="clear"> -->
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                      <!-- </div> -->
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_7d5a147a16453f8bd059a7141_c2bde1fec6" tabindex="-1" value="">
+                      </div>
+                      <!-- <div class="clear"> -->
+                      <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="linkTextingButton">
+                      <!-- </div> -->
+                    </div>
+                  </form>
                 </div>
-                <!-- <div class="clear"> -->
-                    <input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="buttons">
-                <!-- </div> -->
+              </div><!-- .section .tagline -->
+              <!-- Don't need these buttons -->
+              <!--div class="section">
+
+              <div class="buttons">
+              <a href="https://itunes.apple.com/us/app/squad-squadgoals-achieved/id1043079139?ls=1&mt=8" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block download"><h3>get the app</h3></button></a>
+
+              <div class="linkTextingWidget">
+              <div class="linkTextingInner">
+              <input type="hidden" class="linkID" value="b502d676-a370-489e-a264-8a94a1e7d32e">
+              <input class="linkTextingInput" type="tel" id="numberToText_linkTexting"></input>
+              <button class="linkTextingButton" type="button" id="sendButton_linkTexting"><h3>Text me a link</h3></button>
+              <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
+
             </div>
-        </form>
+          </div>
+        </div>
+      </div>
+      <!-- End of Buttons -->
+
+      <div class="section">
+        <div class="social">
+          <div class="icons">
+            <a href="https://instagram.com/shippoutapp/" target="_blank"><img src="img/instagram.png" width="20px"></a>
+            <a href="https://www.facebook.com/shippoutapp" target="_blank"><img src="img/facebook.png" width="10px;"></a>
+            <a href="https://twitter.com/shippoutapp" target="_blank"><img src="img/twitter.png" width="20px;"></a>
+          </div>
+          <div class="hashtag"><a href="https://instagram.com/explore/tags/shippoutapp/" target="_blank"><h1>#shippoutapp</h1></a></div>
+
+        </div>
+      </div>
     </div>
 
-            <!-- Don't need these buttons -->
-                <!--div class="section">
-
-                    <div class="buttons">
-                        <a href="https://itunes.apple.com/us/app/squad-squadgoals-achieved/id1043079139?ls=1&mt=8" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block download"><h3>get the app</h3></button></a>
-
-                       <div class="linkTextingWidget">
-                          <div class="linkTextingInner">
-                            <input type="hidden" class="linkID" value="b502d676-a370-489e-a264-8a94a1e7d32e">
-                            <input class="linkTextingInput" type="tel" id="numberToText_linkTexting"></input>
-                            <button class="linkTextingButton" type="button" id="sendButton_linkTexting"><h3>Text me a link</h3></button>
-                            <div class="linkTextingError" id="linkTextingError" style="display:none;"></div>
-                          
-                          </div>
-                        </div>
-                    </div>
-                </div>
-           <!-- End of Buttons -->
-            
-                <div class="section">
-                    <div class="social">
-                        <div class="icons">
-                            <a href="https://instagram.com/shippoutapp/" target="_blank"><img src="img/instagram.png" width="20px"></a>
-                            <a href="https://www.facebook.com/shippoutapp" target="_blank"><img src="img/facebook.png" width="10px;"></a>
-                            <a href="https://twitter.com/shippoutapp" target="_blank"><img src="img/twitter.png" width="20px;"></a>
-                        </div>
-                        <div class="hashtag"><a href="https://instagram.com/explore/tags/shippoutapp/" target="_blank"><h1>#shippoutapp</h1></a></div>
-
-                    </div>
-                </div>
-            </div>
 
 
+    <!-- right side -->
+    <div class="col-md-5 rightside" style="text-align: left; padding-left: 50px;">
+      <!-- <img src="img/screenshot.png" width="350px"> -->
+      <video width="260px" autoplay loop style="margin-top: -35px" >
+        <source src="ShippOut.gif" type="video/webm">
+          <source src="ShippOut.gif" type="video/mp4">
 
-        <!-- right side -->
-            <div class="col-md-5 rightside" style="text-align: left; padding-left: 50px;">
-                <!-- <img src="img/screenshot.png" width="350px"> -->
-                <video width="260px" autoplay loop style="margin-top: -35px" >
-                    <source src="ShippOut.gif" type="video/webm">
-                  <source src="ShippOut.gif" type="video/mp4">
 
-     
-                </video>
-            </div>
-<!-- end of right side -->
+          </video>
         </div>
-          
+        <!-- end of right side -->
       </div>
 
-      <!-- end of main stuff and container -->
+    </div>
+
+    <!-- end of main stuff and container -->
 
     <!-- press stuffs -->
-      <div class="container">
-        <div class="row pressstories">
-            <hr>
-        </div>
-        <div class="row pressstories">
-            <p>People <span class="glyphicon glyphicon-heart"></span> ShippOUT</p>
-        </div>
-        <div class="row presslinks">
+    <div class="container">
+      <div class="row pressstories">
+        <hr>
+      </div>
+      <div class="row presslinks">
 
-   <!-- Press links below -->      
-             <!--div class="col-md-1 center-block press">
-              <a href="http://www.bustle.com/articles/118045-squad-is-an-app-for-meeting-other-groups-of-friends-and-heres-what-you-need-to" target="_blank"><img src="img/bustle.png" ></a>
-          </div>
-
-
-           <div class="col-md-1 center-block press">
-              <a href="http://techcrunch.com/2015/10/20/squad-launch/" target="_blank"><img src="img/techcrunch.png"></a>
-          </div>
-
-          <div class="col-md-1 center-block press">
-              <a href="http://www.seventeen.com/celebrity/news/a35034/squad-app/" target="_blank"><img src="img/seventeen.png" style="padding: .5em 0em .5em 0em;"></a>
-          </div>
-
-           <div class="col-md-1 center-block press">
-              <a href="http://www.marieclaire.com/culture/news/a16502/squad-app/" target="_blank"><img src="img/marie-claire-logo.jpg"></a>
-          </div>
-
-          <div class="col-md-1 center-block press">
-              <a href="http://www.refinery29.com/2015/10/96408/surprising-tinder-style-apps#slide-1" target="_blank"><img src="img/refinery29.svg" ></a>
-          </div>
-  
-          
-          <div class="col-md-2 center-block press">
-              <a href="http://www.examiner.com/article/squad-launches-today-nyc-to-bring-social-groups-together" target="_blank"><img src="img/examiner.png" ></a>
-          </div>
-
-          <div class="col-md-1 center-block press">
-              <a href="http://www.nydailynews.com/news/national/new-app-squad-brings-groups-friends-tinder-style-article-1.2410706" target="_blank"><img src="img/dailynews.jpg" ></a>
-          </div>
-  
-        <div class="col-md-1 center-block press">
-              <a href="https://www.washingtonpost.com/news/soloish/wp/2015/10/23/behind-on-your-squad-goals-theres-an-app-for-that/" target="_blank"><img src="img/washingtonpost.png" ></a>
-          </div>
-          
-
-        
-
-        </div>
-
-       <!--  <div class="row dropithere">
-         
-           
-
-           <div class="col-md-2 center-block press">
-              <a href="http://www.marieclaire.com/culture/news/a16502/squad-app/" target="_blank"><img src="img/marie-claire-logo.jpg"></a>
-          </div>
-
-         
-          <div class="col-md-2 center-block press">
-              <a href="http://www.examiner.com/article/squad-launches-today-nyc-to-bring-social-groups-together" target="_blank"><img src="img/examiner.png" ></a>
-          </div>
-
-          <div class="col-md-2 center-block press">
-              <a href="https://www.washingtonpost.com/news/soloish/wp/2015/10/23/behind-on-your-squad-goals-theres-an-app-for-that/" target="_blank"><img src="img/washingtonpost.png" ></a>
-          </div>
-      
-          
-
-        </div> -->
-
+        <!-- Press links below -->
+        <!--div class="col-md-1 center-block press">
+        <a href="http://www.bustle.com/articles/118045-squad-is-an-app-for-meeting-other-groups-of-friends-and-heres-what-you-need-to" target="_blank"><img src="img/bustle.png" ></a>
       </div>
 
-    <!-- FOOTER -->
 
-        
-       <footer class="footer">
-      <div class="container">
-        <!--a href="http://download.getsquad.co" target="_blank"><p class="text-muted amy" style="font-family:'Gotham-Medium';">Download the app</p></a-->
+      <div class="col-md-1 center-block press">
+      <a href="http://techcrunch.com/2015/10/20/squad-launch/" target="_blank"><img src="img/techcrunch.png"></a>
+    </div>
 
-        <!--a href="http://joinusapp.us10.list-manage1.com/subscribe?u=8fb90a93523fb60d645c1a9a3&id=e4fa898164" target="_blank"><p class="text-muted amy">Be a Squad Ambassador</p></a-->
-        
+    <div class="col-md-1 center-block press">
+    <a href="http://www.seventeen.com/celebrity/news/a35034/squad-app/" target="_blank"><img src="img/seventeen.png" style="padding: .5em 0em .5em 0em;"></a>
+  </div>
 
-        <a href="https://angel.co/squad-1/jobs?utm_source=profile_module" target="_blank"><p class="text-muted amy">Join Us!</p></a>
+  <div class="col-md-1 center-block press">
+  <a href="http://www.marieclaire.com/culture/news/a16502/squad-app/" target="_blank"><img src="img/marie-claire-logo.jpg"></a>
+</div>
 
-         <!--a href="http://joinusapp.us10.list-manage.com/subscribe?u=8fb90a93523fb60d645c1a9a3&id=b5672bc556"><p class="text-muted amy">Android User?</p></a-->
-
-        <!--a href="http://getsquad.co/privacypolicy.html" target="_blank"><p class="text-muted amy">Privacy Policy</p></a-->
-        <!--a href="http://getsquad.co/termsofservice.html" target="_blank"><p class="text-muted amy">Terms</p></a-->
-        <a href="mailto:hello@shippoutapp.com"><p class="text-muted amy">Contact Us</p></a>
-       
-       <p class="text-muted " id="ugh">(c) 2015 ShippOUT, Inc. </p>
-
-      </div>
-    </footer>
-    
+<div class="col-md-1 center-block press">
+<a href="http://www.refinery29.com/2015/10/96408/surprising-tinder-style-apps#slide-1" target="_blank"><img src="img/refinery29.svg" ></a>
+</div>
 
 
-  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<div class="col-md-2 center-block press">
+<a href="http://www.examiner.com/article/squad-launches-today-nyc-to-bring-social-groups-together" target="_blank"><img src="img/examiner.png" ></a>
+</div>
+
+<div class="col-md-1 center-block press">
+<a href="http://www.nydailynews.com/news/national/new-app-squad-brings-groups-friends-tinder-style-article-1.2410706" target="_blank"><img src="img/dailynews.jpg" ></a>
+</div>
+
+<div class="col-md-1 center-block press">
+<a href="https://www.washingtonpost.com/news/soloish/wp/2015/10/23/behind-on-your-squad-goals-theres-an-app-for-that/" target="_blank"><img src="img/washingtonpost.png" ></a>
+</div>
+
+
+
+
+</div>
+
+<!--  <div class="row dropithere">
+
+
+
+<div class="col-md-2 center-block press">
+<a href="http://www.marieclaire.com/culture/news/a16502/squad-app/" target="_blank"><img src="img/marie-claire-logo.jpg"></a>
+</div>
+
+
+<div class="col-md-2 center-block press">
+<a href="http://www.examiner.com/article/squad-launches-today-nyc-to-bring-social-groups-together" target="_blank"><img src="img/examiner.png" ></a>
+</div>
+
+<div class="col-md-2 center-block press">
+<a href="https://www.washingtonpost.com/news/soloish/wp/2015/10/23/behind-on-your-squad-goals-theres-an-app-for-that/" target="_blank"><img src="img/washingtonpost.png" ></a>
+</div>
+
+
+
+</div> -->
+
+</div>
+
+<!-- FOOTER -->
+
+
+<footer class="footer">
+  <div class="container">
+    <!--a href="http://download.getsquad.co" target="_blank"><p class="text-muted amy" style="font-family:'Gotham-Medium';">Download the app</p></a-->
+
+    <!--a href="http://joinusapp.us10.list-manage1.com/subscribe?u=8fb90a93523fb60d645c1a9a3&id=e4fa898164" target="_blank"><p class="text-muted amy">Be a Squad Ambassador</p></a-->
+
+
+    <a href="https://angel.co/squad-1/jobs?utm_source=profile_module" target="_blank"><p class="text-muted amy">Join Us!</p></a>
+
+    <!--a href="http://joinusapp.us10.list-manage.com/subscribe?u=8fb90a93523fb60d645c1a9a3&id=b5672bc556"><p class="text-muted amy">Android User?</p></a-->
+
+    <!--a href="http://getsquad.co/privacypolicy.html" target="_blank"><p class="text-muted amy">Privacy Policy</p></a-->
+    <!--a href="http://getsquad.co/termsofservice.html" target="_blank"><p class="text-muted amy">Terms</p></a-->
+    <a href="mailto:hello@shippoutapp.com"><p class="text-muted amy">Contact Us</p></a>
+
+    <p class="text-muted " id="ugh">(c) 2015 ShippOUT, Inc. </p>
+
+  </div>
+</footer>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-68098101-4', 'auto');
-  ga('send', 'pageview');
+ga('create', 'UA-68098101-4', 'auto');
+ga('send', 'pageview');
 
 </script>
 <script type="text/javascript" src="//d3q6uu7asevdsg.cloudfront.net/1.3/js/link_texting.min.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
