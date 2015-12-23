@@ -15,9 +15,8 @@ h1 {
 	/*color: #71778B;*/
 	color: #79819a;
 	font-family: 'Gotham-Book';
-	line-height: 46px;
+	line-height: 30px;
 	letter-spacing: 2.18px;
-	text-transform: uppercase;
 }
 
 h2 {
@@ -123,7 +122,7 @@ a:hover {
 }
 
 .linkTextingButton {
-	background-color: #9198B0;
+	background-color: #e48e53;
 	width: 50%;
 	display: block;
 	float: left;
@@ -144,7 +143,7 @@ a:hover {
 }
 
 .linkTextingButton:hover {
-	background-color: #597fff;
+	background-color: #e48e53
 }
 
 .linkTextingButton h3{
